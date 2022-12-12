@@ -2,19 +2,24 @@
 var map = L.map('map').setView([52.3759250759437, 4.908394762488651], 13);
 
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+// L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+// 	maxZoom: 19,
+// 	attribution: '&copy; OpenStreetMap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(map);
+
+
+
+L.tileLayer('https://{s}.tile.jawg.io/jawg-sunny/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
+	attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	maxZoom: 19,
+	subdomains: 'abcd',
+	accessToken: 'kNtCCULNTD1RmU171cnWoSYtfhGSRTgHzr9gvYwo7hATlg66ihnKpP0PtdAscvtM',
 }).addTo(map);
 
-
-
-
-// var marker = L.marker([52.3759250759437, 4.908394762488651]).addTo(map);
-// var marker1 = L.marker([52.3889343533289, 4.880050638536307]).addTo(map);
-// var marker2 = L.marker([52.36429770883803, 4.938856711551853]).addTo(map);
-// var marker3 = L.marker([52.353327900638206, 4.906540513404021]).addTo(map);
-
+// L.tileLayer.provider('Jawg.Streets', {
+//   variant: '',
+// 	accessToken: 'R1sgcZLnrn6nS3vyURHjEZqC6E7kJC9vRTI1Jrjolu3ZVkGCV2HR9Gq6yHQTOJUf',
+// }).addTo(map);
 
 
 document.querySelectorAll("button").forEach((element) => {
@@ -26,7 +31,7 @@ document.querySelectorAll("button").forEach((element) => {
    
 
     element.addEventListener("click", function () {
-        map.flyTo([lat, long], 17, {
+        map.flyTo([lat, long], 15, {
           duration: 2,
         });
         var tooltip = L.tooltip()
