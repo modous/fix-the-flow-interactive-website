@@ -105,6 +105,7 @@ color:red;
 .locaties{
     text-align: center;
     margin-bottom: 40px;
+   
 }
 
 /* Logo */
@@ -189,4 +190,36 @@ border-color: black;
 font-size: large;
 margin-bottom: 3px;
 
+}
+
+
+
+.reserveer-grid{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    */
+}
+
+.reserveer-veld{
+    border: thin solid black;
+    margin:4px;
+}
+.reserveerknop{
+    margin-bottom: 5px;
+    padding: 5px;
+    border-color: #000000;
+    color: white;
+    background-color: black;
+}
+
+.title{
+    margin-bottom: 50px;
+}
+
+@media (min-width: 475px){
+    .reserveer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+   
+    }
 }

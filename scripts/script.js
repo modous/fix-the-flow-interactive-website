@@ -31,7 +31,7 @@ document.querySelectorAll("button").forEach((element) => {
    
 
     element.addEventListener("click", function () {
-        map.flyTo([lat, long], 15, {
+        map.flyTo([lat, long], 14, {
           duration: 2,
         });
         var tooltip = L.tooltip()

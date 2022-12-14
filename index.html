@@ -34,22 +34,25 @@
 
 
     <div class="locaties">
-        <h1>Zoek hier je OBA locatie!</h1>
+        <h1 class="title">Zoek hier je OBA locatie!</h1>
 
     </div>
     <div class="linker-rij">
         <div class="content-links">
             <h1>Centrum</h1>
-            <button class="button1" data-long="4.908394762488651" data-lat="52.3759250759437" data-var="9">
+            <button class="button1" data-long="4.908394762488651" data-lat="52.3759250759437"
+                data-var="<b>Oosterdokskade 143, 1011 DL Amsterdam</b> </br> Aantal Plekken: 9">
                 Oba Oosterdok studieplekken beschikbaar: 9
             </button>
 
             <h1>Noord</h1>
-            <button class="button1" data-long="4.916954828588584" data-lat="52.41227981736986" data-var="10">
+            <button class="button1" data-long="4.916954828588584" data-lat="52.41227981736986"
+                data-var="<b>Bezaanjachtplein 249, 1034 CR Amsterdam</b> </br> Aantal Plekken: 10">
                 Oba Banne studieplekken beschikbaar: 10
-            </button> 
-            
-            <button class="button1" data-long="4.893007726924618" data-lat="52.418086175621944" data-var="12">
+            </button>
+
+            <button class="button1" data-long="4.893007726924618" data-lat="52.418086175621944"
+                data-var="<b>Molenwijk 21 1035 EG Amsterdam</b> </br> Aantal Plekken: 12">
                 Oba Molenwijk studieplekken beschikbaar: 12
             </button>
 
@@ -63,7 +66,7 @@
                 Oba Diemen studieplekken beschikbaar: 5
             </button>
 
-            
+
             <h1>Ouder-Amstel</h1>
             <button class="button1" data-long="4.907622155756121" data-lat="52.295334273122066" data-var="21">
                 Oba Ouderkerk studieplekken beschikbaar: 21
@@ -72,10 +75,32 @@
             <button class="button1" data-long="4.938607426921378" data-lat="52.33249937165202" data-var="9">
                 Oba Duivendrecht studieplekken beschikbaar: 9
             </button>
-        <br><br>
+            <br><br>
         </div>
 
         <div id="map" class="mapouter"></div>
+
+    </div>
+    <div class="locaties">
+        <h1 class="title">Reserveer hier je studieplek!</h1>
+
+        <div class="reserveer-grid">
+            <div class="reserveer-veld">
+                <h2>Oosterdok</h2>
+                <h3>Studieplekken beschikbaar: 9</h3>
+                <button class="reserveerknop" onclick="reserveer">Reserveer!</button>
+            </div>
+            <div class="reserveer-veld">
+                <h2>Banne</h2>
+                <h3>Studieplekken beschikbaar: 10</h3>
+                <button class="reserveerknop" onclick="reserveer">Reserveer!</button>
+            </div>
+            <div class="reserveer-veld">
+                <h2>Molenwijk</h2>
+                <h3>Studieplekken beschikbaar: 12</h3>
+                <button class="reserveerknop" onclick="reserveer">Reserveer!</button>
+            </div>
+        </div>
 
 
     </div>
