@@ -58,21 +58,25 @@
 
 
             <h1>Oost</h1>
-            <button class="button1" data-long="4.9388996272243775" data-lat="52.36423547008479" data-var="50">
+            <button class="button1" data-long="4.9388996272243775" data-lat="52.36423547008479"
+                data-var="<b>Javaplein 2, 1094 HW Amsterdam</b> </br> Aantal Plekken: 50">
                 Oba Javaplein studieplekken beschikbaar: 50
             </button>
-
-            <button class="button1" data-long="4.961220056059756" data-lat="52.34162695346866" data-var="5">
+            
+            <button class="button1" data-long="4.961220056059756" data-lat="52.34162695346866" 
+            data-var="<b>Wilhelminaplantsoen 126, 1111 CP Diemen</b> </br> Aantal Plekken: 5">
                 Oba Diemen studieplekken beschikbaar: 5
             </button>
 
 
             <h1>Ouder-Amstel</h1>
-            <button class="button1" data-long="4.907622155756121" data-lat="52.295334273122066" data-var="21">
+            <button class="button1" data-long="4.907622155756121" data-lat="52.295334273122066" 
+            data-var="21">
                 Oba Ouderkerk studieplekken beschikbaar: 21
             </button>
 
-            <button class="button1" data-long="4.938607426921378" data-lat="52.33249937165202" data-var="9">
+            <button class="button1" data-long="4.938607426921378" data-lat="52.33249937165202" 
+            data-var="9">
                 Oba Duivendrecht studieplekken beschikbaar: 9
             </button>
             <br><br>
@@ -87,20 +91,21 @@
         <div class="reserveer-grid">
             <div class="reserveer-veld">
                 <h2>Oosterdok</h2>
-                <h3>Studieplekken beschikbaar: 9</h3>
-                <button class="reserveerknop" onclick="reserveer">Reserveer!</button>
+                <h3 id="num1">Studieplekken beschikbaar: 9</h3>
+                <button  class="reserveerknop" onclick="showAlert('num1')">Reserveer!</button>
             </div>
             <div class="reserveer-veld">
                 <h2>Banne</h2>
-                <h3>Studieplekken beschikbaar: 10</h3>
-                <button class="reserveerknop" onclick="reserveer">Reserveer!</button>
+                <h3 id="num2">Studieplekken beschikbaar: 10</h3>
+                <button class="reserveerknop" onclick="showAlert('num2')">Reserveer!</button>
             </div>
             <div class="reserveer-veld">
                 <h2>Molenwijk</h2>
-                <h3>Studieplekken beschikbaar: 12</h3>
-                <button class="reserveerknop" onclick="reserveer">Reserveer!</button>
+                <h3 id="num3">Studieplekken beschikbaar: 12</h3>
+                <button class="reserveerknop" onclick="showAlert('num3')">Reserveer!</button>
             </div>
         </div>
+
 
 
     </div>
@@ -116,41 +121,39 @@
         <div>
             <p>Service</p>
             <ul>
-                <li><a href="https://www.oba.nl/service.html">Veelgestelde vragen</a></li>
-                <li><a href="">vestigingen</a></li>
-                <li><a href="">abonnementen</a></li>
-                <li><a href="">contacten</a></li>
+                <a class="aFooter" href="https://www.oba.nl/service.html">Veelgestelde vragen</a>
+                <a class="aFooter" href="">vestigingen</a>
+                <a class="aFooter" href="">abonnementen</a>
+                <a class="aFooter" href="">contacten</a>
             </ul>
         </div>
 
         <div>
             <p>Inspiratie</p>
             <ul>
-                <li><a href="">nieuws</a></li>
-                <li><a href="">nieuwsbrief</a></li>
-                <li><a href="">leestips en blogs</a></li>
-                <li><a href="">instagram</a></li>
-                <li><a href="">twitter</a></li>
-                <li><a href="">facebook</a></li>
-                <li><a href="">linkedin</a></li>
+                <a class="aFooter" href="">nieuws</a>
+                <a class="aFooter" href="">nieuwsbrief</a>
+                <a class="aFooter" href="">leestips en blogs</a>
+                <a class="aFooter" href="">instagram</a>
+                <a class="aFooter" href="">twitter</a>
             </ul>
         </div>
 
         <div>
             <p>Over ons</p>
             <ul>
-                <li><a href="">vacatures</a></li>
-                <li><a href="">voor de pers</a></li>
-                <li><a href="">partners</a></li>
-                <li><a href="">fondsenwerving</a></li>
+                <a class="aFooter" href="">vacatures</a>
+                <a class="aFooter" href="">voor de pers</a>
+                <a class="aFooter" href="">partners</a>
+                <a class="aFooter" href="">fondsenwerving</a>
             </ul>
         </div>
 
         <div>
             <p>Zakelijk</p>
             <ul>
-                <li><a href="">Oba school</a></li>
-                <li><a href="">Oba congres</a></li>
+                <a class="aFooter" href="">Oba school</a>
+                <a class="aFooter" href="">Oba congres</a>
             </ul>
         </div>
 

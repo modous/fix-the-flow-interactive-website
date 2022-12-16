@@ -194,11 +194,7 @@ margin-bottom: 3px;
 
 
 
-.reserveer-grid{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    */
-}
+
 
 .reserveer-veld{
     border: thin solid black;
@@ -222,4 +218,14 @@ margin-bottom: 3px;
         grid-template-columns: 1fr 1fr 1fr;
    
     }
+}
+
+
+.aFooter{
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+#num1, #num2, #num3{
+    margin:20px;
 }

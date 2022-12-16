@@ -2,12 +2,6 @@
 var map = L.map('map').setView([52.3759250759437, 4.908394762488651], 13);
 
 
-// L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-// 	maxZoom: 19,
-// 	attribution: '&copy; OpenStreetMap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-// }).addTo(map);
-
-
 
 L.tileLayer('https://{s}.tile.jawg.io/jawg-sunny/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
 	attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -15,11 +9,6 @@ L.tileLayer('https://{s}.tile.jawg.io/jawg-sunny/{z}/{x}/{y}{r}.png?access-token
 	subdomains: 'abcd',
 	accessToken: 'kNtCCULNTD1RmU171cnWoSYtfhGSRTgHzr9gvYwo7hATlg66ihnKpP0PtdAscvtM',
 }).addTo(map);
-
-// L.tileLayer.provider('Jawg.Streets', {
-//   variant: '',
-// 	accessToken: 'R1sgcZLnrn6nS3vyURHjEZqC6E7kJC9vRTI1Jrjolu3ZVkGCV2HR9Gq6yHQTOJUf',
-// }).addTo(map);
 
 
 document.querySelectorAll("button").forEach((element) => {
@@ -42,9 +31,28 @@ document.querySelectorAll("button").forEach((element) => {
     });
 
 
+    //JAVASCRIPT VOOR RESERVERINGEN
+
+    function todayDate(){
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0
+      var yyyy = today.getFullYear();
+      return [ dd, mm, yyyy ].join('/')
+    }
 
 
-    
+
+    function showAlert(id) {
+      
+       document.getElementById(id).innerHTML = "je hebt gereserveerd! " + todayDate();
+      alert("reservering geplaatst!\n" + todayDate());
+    }   
+
+
+
+
+
 
 
 
