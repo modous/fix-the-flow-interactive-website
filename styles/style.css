@@ -47,7 +47,8 @@ color:red;
         grid-template-areas:
           "nav1 nav2"
           "nav3 nav4"
-          "nav5 nav6";
+          "nav5 nav6"
+          "nav7 nav8";
         padding: 5px;
         gap: 5px;
     }
@@ -72,6 +73,12 @@ color:red;
 }
 .nav6{
     grid-area: nav6;
+}
+.nav7{
+    grid-area: nav7;
+}
+.nav8{
+    grid-area: nav8;
 }
 
 
@@ -246,3 +253,39 @@ margin-bottom: 3px;
   }
   
   .btn:hover {opacity: 0.6}
+
+  .btn2{
+    background-color: #8df12e;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .btn2:hover {opacity: 0.6}
+
+  @media (max-width: 1070px){
+    .btn2{
+        display: flex;
+        max-width: fit-content;
+        margin-left: 80px;
+    }
+}
+
+
+.btn3{
+    background-color: #ff4949;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    text-decoration: none;
+}

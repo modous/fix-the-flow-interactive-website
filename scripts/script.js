@@ -15,6 +15,7 @@ document.querySelectorAll("button").forEach((element) => {
     let lat = element.dataset.lat;
     let long = element.dataset.long;
     let variable = element.dataset.var;
+    let aantal = element.dataset.getal;
 
     L.marker([lat, long]).addTo(map);
    
@@ -44,11 +45,15 @@ document.querySelectorAll("button").forEach((element) => {
 
 
     function showAlert(id) {
-      
-       document.getElementById(id).innerHTML = "je hebt gereserveerd! " + todayDate();
-      alert("reservering geplaatst!\n" + todayDate());
-    }   
 
+      
+       document.getElementById(id).innerHTML = "je hebt gereserveerd!<br> " + todayDate();
+      alert("reservering geplaatst!\n" + todayDate());
+    
+    
+    
+    
+    } 
 
 
 
