@@ -229,3 +229,20 @@ margin-bottom: 3px;
 #num1, #num2, #num3{
     margin:20px;
 }
+
+
+
+ /* BUTTON HOVER STYLE */
+ .btn {
+    background-color: #140d0d;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {opacity: 0.6}
