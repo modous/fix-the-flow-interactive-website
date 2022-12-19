@@ -1,22 +1,22 @@
 
-var map = L.map('map').setView([52.3759250759437, 4.908394762488651], 13);
+  var map = L.map('map').setView([52.3759250759437, 4.908394762488651], 13);
 
-
-
-L.tileLayer('https://{s}.tile.jawg.io/jawg-sunny/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
-	attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	maxZoom: 19,
-	subdomains: 'abcd',
-	accessToken: 'kNtCCULNTD1RmU171cnWoSYtfhGSRTgHzr9gvYwo7hATlg66ihnKpP0PtdAscvtM',
-}).addTo(map);
-
-
-document.querySelectorAll("button").forEach((element) => {
+  
+  
+    L.tileLayer('https://{s}.tile.jawg.io/jawg-sunny/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
+      attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
+      subdomains: 'abcd',
+      accessToken: 'kNtCCULNTD1RmU171cnWoSYtfhGSRTgHzr9gvYwo7hATlg66ihnKpP0PtdAscvtM',
+    }).addTo(map);
+  
+  
+document.querySelectorAll(".btn").forEach((element) => {
     let lat = element.dataset.lat;
     let long = element.dataset.long;
     let variable = element.dataset.var;
-    let aantal = element.dataset.getal;
-
+    
+   
     L.marker([lat, long]).addTo(map);
    
 
@@ -32,27 +32,16 @@ document.querySelectorAll("button").forEach((element) => {
     });
 
 
-    //JAVASCRIPT VOOR RESERVERINGEN
-
-    function todayDate(){
-      var today = new Date();
-      var dd = String(today.getDate()).padStart(2, '0');
-      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0
-      var yyyy = today.getFullYear();
-      return [ dd, mm, yyyy ].join('/')
-    }
-
-
-
-    function showAlert(id) {
-
   
-        // alert("loll bruh" + todayDate());
+
+    
+
+    // function showAlert(id) {
       
-        document.getElementById(id).innerHTML = "je hebt gereserveerd!<br> " + todayDate();
-        alert("reservering geplaatst!\n" + todayDate());
-   
-    } 
+       
+    //     document.getElementById(id).innerHTML = "je hebt gereserveerd <br> " + todayDate();
+    //     alert("reservering geplaatst!\n" + todayDate());
+    // } 
 
 
 
