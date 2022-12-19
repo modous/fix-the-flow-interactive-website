@@ -46,13 +46,12 @@ document.querySelectorAll("button").forEach((element) => {
 
     function showAlert(id) {
 
+  
+        // alert("loll bruh" + todayDate());
       
-       document.getElementById(id).innerHTML = "je hebt gereserveerd!<br> " + todayDate();
-      alert("reservering geplaatst!\n" + todayDate());
-    
-    
-    
-    
+        document.getElementById(id).innerHTML = "je hebt gereserveerd!<br> " + todayDate();
+        alert("reservering geplaatst!\n" + todayDate());
+   
     } 
 
 
