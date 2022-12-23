@@ -1,6 +1,6 @@
-  //JAVASCRIPT VOOR RESERVERINGEN
+ //JAVASCRIPT VOOR RESERVERINGEN
 
-  function todayDate(){
+ function todayDate(){
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0
@@ -17,7 +17,12 @@
     button.addEventListener('click', function (event) {
       const id = event.target.dataset.id
 
-      button.style.display = 'none';
+      
+        button.style.display = 'none';
+      
+
+      
+      
       document.getElementById(id).innerHTML = "je hebt gereserveerd! <br> " + todayDate();
       alert("reservering geplaatst!\n" + todayDate());
     });
