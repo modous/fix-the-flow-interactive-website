@@ -16,12 +16,8 @@
 
     button.addEventListener('click', function (event) {
       const id = event.target.dataset.id
-
-      
+ 
         button.style.display = 'none';
-      
-
-      
       
       document.getElementById(id).innerHTML = "je hebt gereserveerd! <br> " + todayDate();
       alert("reservering geplaatst!\n" + todayDate());
