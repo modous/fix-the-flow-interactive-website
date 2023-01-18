@@ -28,10 +28,9 @@ En als er je het venster sluit komt de datum te staan in plaats van de knop om t
 
 Als er geen plek is dan komt er ook geen knop om te kunnen reserveren.
 
+Hierbij de link naar mijn pagina: https://modous.github.io/fix-the-flow-interactive-website/
 
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
 
 
