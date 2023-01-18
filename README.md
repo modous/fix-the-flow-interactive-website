@@ -3,15 +3,32 @@ Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uit
 De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+User tests en user story
 
 ## User Story
-<!-- Schrijf de user story waar je aan hebt gewerkt  -->
+Als gebruiker wil ik een studieplek bij de OBA kunnen reserveren.
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+Eerst klik je op de knop "Reserveren" zodat je doorverwezen wordt naar de reserveringspagina.
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/34092733/213309026-17ff4471-ff2b-4154-b09b-312c85a98b78.png">
+
+Daarna klik je op 1 van de knoppen van de locatie om te reserveren voor die dag.
+
+<img width="1436" alt="image" src="https://user-images.githubusercontent.com/34092733/213309292-2c075d0d-85aa-4063-aecb-f49769e886c6.png">
+
+Hieronder zie je wat er je te zien krijgt na dat er op reserveren wordt geklikt:
+
+<img width="586" alt="image" src="https://user-images.githubusercontent.com/34092733/213309473-f827a4a1-14e6-4790-b22f-4807c88d0456.png">
+
+En als er je het venster sluit komt de datum te staan in plaats van de knop om te reserveren:
+
+<img width="1273" alt="image" src="https://user-images.githubusercontent.com/34092733/213309815-3e493183-bc78-4cea-80c1-80c18dbebb0a.png">
+
+Als er geen plek is dan komt er ook geen knop om te kunnen reserveren.
+
+
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
